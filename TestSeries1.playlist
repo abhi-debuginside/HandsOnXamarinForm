@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="SampleApp.UITest.Tests(iOS).WelcomeTextIsDisplayed" /><Add Test="SampleApp.UITest.Tests(Android).WelcomeTextIsDisplayed" /></Playlist>
