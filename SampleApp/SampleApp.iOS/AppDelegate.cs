@@ -25,8 +25,11 @@ namespace SampleApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            AppCenter.Start("{Your App Secret}", typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("ios={9c586b0d-60d9-4684-8941-8fe1d6b1192f};", typeof(Analytics), typeof(Crashes));
 
+#if ENABLE_TEST_CLOUD
+Xamarin.Calabash.Start();
+#endif
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
